@@ -1,0 +1,8 @@
+model/
+testing/
+training/
+pre_processed/
+__pycache__
+extras/
+__init__.py
+

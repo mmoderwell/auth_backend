@@ -1,0 +1,4 @@
+python ./classifier.py TRAIN ./training/ ./model/20180402-114759/20180402-114759.pb ./model/trained_classifier.pkl --batch_size 1000
+
+
+python .\align_dataset_mtcnn.py .\pre_processed\ .\training\
