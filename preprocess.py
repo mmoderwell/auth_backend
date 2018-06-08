@@ -11,7 +11,7 @@ import face
 import detect_face
 
 
-FACE_DIR = "../train/"
+FACE_DIR = "/root/auth/train/"
 
 
 
@@ -62,7 +62,7 @@ def main():
         nrof_images_total += 1
         filename = os.path.splitext(os.path.split(image_path)[1])[0]
         output_filename = os.path.join(output_class_dir, filename+'.png')
-        print(image_path)
+        #print(image_path)
         if not os.path.exists(output_filename):
             try:
                 img = misc.imread(image_path)
@@ -115,9 +115,9 @@ def main():
                         misc.imsave(output_filename_n, scaled)
                 else:
                     print('Unable to align "%s"' % image_path)
-                            
-    #print('Total number of images: %d' % nrof_images_total)
-    #print('Number of image successfully aligned: %d' % nrof_successfully_aligned)
+
+    print('Total number of images: %d' % nrof_images_total)
+    print('Number of image successfully aligned: %d' % nrof_successfully_aligned)
     print ('Alignment complete.');
 
 
