@@ -30,8 +30,8 @@ def main():
 
     test_data_dir = "../processed/"
     data_dir = "../processed/"
-    model = "./model/20180402-114759/"
-    classifier_filename = "./model/trained_classifier.pkl"
+    model = os.path.dirname(__file__) + "/model/20180402-114759/"
+    classifier_filename = os.path.dirname(__file__) + "/model/trained_classifier.pkl"
     use_split_dataset = False
     batch_size = 90
     image_size = 160
