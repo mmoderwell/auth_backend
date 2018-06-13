@@ -100,7 +100,7 @@ class Identifier:
             #round the certainty to 4 decimals
             best_class_certainty = np.around(best_class_certainty, decimals=4)
 
-            if (best_class_certainty < 0.6):
+            if (best_class_certainty < 0.75):
                 return 'Unknown', best_class_certainty
             else:
                 return self.class_names[best_class_indices[0]], best_class_certainty

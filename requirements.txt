@@ -2,6 +2,6 @@ tensorflow
 scipy
 scikit-learn
 opencv-python
-matplotlib
 pickle
+pillow
 numpy
